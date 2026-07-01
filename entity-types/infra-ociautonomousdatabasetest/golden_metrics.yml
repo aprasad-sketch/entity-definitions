@@ -1,0 +1,24 @@
+queryLatency:
+  title: Query Latency
+  unit: SECONDS
+  queries:
+    oci:
+      select: average(oci.autonomousdatabasetest.query.latency)
+transactionCount:
+  title: Transaction Count
+  unit: COUNT
+  queries:
+    oci:
+      select: sum(oci.autonomousdatabasetest.transaction.count)
+failedConnections:
+  title: Failed Connections
+  unit: COUNT
+  queries:
+    oci:
+      select: sum(oci.autonomousdatabasetest.failed.connections)
+queuedStatements:
+  title: Queued Statements
+  unit: COUNT
+  queries:
+    oci:
+      select: max(oci.autonomousdatabasetest.queued.statements)
