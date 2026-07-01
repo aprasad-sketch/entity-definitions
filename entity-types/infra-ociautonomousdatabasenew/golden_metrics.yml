@@ -1,0 +1,31 @@
+---
+# Golden metrics for OCI Autonomous Database New
+# Source: https://docs.oracle.com/en-us/iaas/autonomous-database-serverless/doc/autonomous-monitor-metrics-list.html
+queries:
+  - query:
+      select: average(oci.autonomous_database_new.CpuUtilization)
+      from: Metric
+      where: ""
+      facet: ""
+      eventId: entity.guid
+    visualization:
+      title: "CPU Utilization"
+      unit: "PERCENTAGE"
+  - query:
+      select: average(oci.autonomous_database_new.StorageUtilization)
+      from: Metric
+      where: ""
+      facet: ""
+      eventId: entity.guid
+    visualization:
+      title: "Storage Utilization"
+      unit: "PERCENTAGE"
+  - query:
+      select: latest(oci.autonomous_database_new.DatabaseAvailability)
+      from: Metric
+      where: ""
+      facet: ""
+      eventId: entity.guid
+    visualization:
+      title: "Database Availability"
+      unit: "COUNT"
