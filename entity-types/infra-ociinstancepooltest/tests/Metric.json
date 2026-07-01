@@ -1,0 +1,17 @@
+[
+  {
+    "oci.compartmentId": "ocid1.compartment.oc1..aaaaaaaabbbbbbccccccccdddddddeeeeeeefffffffgggggggghhhhhhhhiiiiiiiiijjjjjjjj",
+    "oci.namespace": "oci_instancepooltest",
+    "oci.region": "us-phoenix-1",
+    "oci.resourceId": "ocid1.instancepooltest.oc1.phx.aaaaaaaabbbbbbccccccccdddddddeeeeeeefffffffgggggggghhhhhhhhiiiiiiiiijjjjjjjj",
+    "oci.resourceName": "test-instance-pool-test",
+    "oci.displayName": "test-instance-pool-test",
+    "oci.lifecycleState": "RUNNING",
+    "oci.availabilityDomain": "AD-1",
+    "collector.name": "oci-monitor",
+    "instrumentation.provider": "oci",
+    "metricName": "oci.instancepooltest.instance.pool.size",
+    "newrelic.cloudIntegrations.integrationName": "OCI Monitor metrics",
+    "newrelic.cloudIntegrations.providerAccountName": "oci-dev-all-metrics"
+  }
+]
