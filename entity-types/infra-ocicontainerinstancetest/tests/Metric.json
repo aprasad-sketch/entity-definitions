@@ -1,0 +1,16 @@
+[
+  {
+    "oci.compartmentId": "ocid1.compartment.oc1..aaaaaaaabbbbbbccccccccdddddddeeeeeeefffffffgggggggghhhhhhhhiiiiiiiiijjjjjjjj",
+    "oci.namespace": "oci_containerinstancetest",
+    "oci.region": "us-ashburn-1",
+    "oci.resourceId": "ocid1.containerinstancetest.oc1.us-ashburn-1.aaaaaaaabbbbbbccccccccdddddddeeeeeeefffffffgggggggghhhhhhhhiiiiiiiiijjjjjjjj",
+    "oci.resourceName": "test-container-instance-test",
+    "oci.displayName": "test-container-instance-test",
+    "oci.lifecycleState": "ACTIVE",
+    "collector.name": "oci-monitor",
+    "instrumentation.provider": "oci",
+    "metricName": "oci.container.instance.test.cpu.utilization",
+    "newrelic.cloudIntegrations.integrationName": "OCI Monitor metrics",
+    "newrelic.cloudIntegrations.providerAccountName": "oci-dev-all-metrics"
+  }
+]
