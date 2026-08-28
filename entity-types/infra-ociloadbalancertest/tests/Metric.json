@@ -1,0 +1,17 @@
+[
+  {
+    "oci.compartmentId": "ocid1.compartment.oc1..aaaaaaaabbbbbbccccccccdddddddeeeeeeefffffffgggggggghhhhhhhhiiiiiiiiijjjjjjjj",
+    "oci.namespace": "oci_loadbalancertest",
+    "oci.region": "us-ashburn-1",
+    "oci.resourceId": "ocid1.loadbalancer.oc1.us-ashburn-1.aaaaaaaabbbbbbccccccccdddddddeeeeeeefffffffgggggggghhhhhhhhiiiiiiiiijjjjjjjj",
+    "oci.resourceDisplayName": "test-loadbalancertest",
+    "oci.displayName": "test-loadbalancertest",
+    "oci.availabilityDomain": "AD-1",
+    "oci.lifecycleState": "ACTIVE",
+    "collector.name": "oci-monitor",
+    "instrumentation.provider": "oci",
+    "metricName": "oci.loadbalancertest.http.requests",
+    "newrelic.cloudIntegrations.integrationName": "OCI Monitor metrics",
+    "newrelic.cloudIntegrations.providerAccountName": "oci-dev-all-metrics"
+  }
+]
