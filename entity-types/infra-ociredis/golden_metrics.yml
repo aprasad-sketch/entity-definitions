@@ -1,0 +1,29 @@
+# Golden metrics for OCI Redis
+# Source: https://docs.oracle.com/en-us/iaas/Content/redis/metrics.htm
+cpuUtilization:
+  title: CPU Utilization
+  unit: PERCENTAGE
+  queries:
+    oci:
+      select: average(oci.redis.CPUUtilization)
+      from: Metric
+      eventId: entity.guid
+      eventName: entity.name
+memoryUtilization:
+  title: Memory Utilization
+  unit: PERCENTAGE
+  queries:
+    oci:
+      select: average(oci.redis.MemoryUtilization)
+      from: Metric
+      eventId: entity.guid
+      eventName: entity.name
+connectedClients:
+  title: Connected Clients
+  unit: COUNT
+  queries:
+    oci:
+      select: average(oci.redis.ConnectedClients)
+      from: Metric
+      eventId: entity.guid
+      eventName: entity.name

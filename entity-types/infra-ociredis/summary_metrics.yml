@@ -1,0 +1,19 @@
+# Summary metrics for OCI Redis
+# Source: https://docs.oracle.com/en-us/iaas/Content/redis/metrics.htm
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: OCI account
+  unit: STRING
+cpuUtilization:
+  goldenMetric: cpuUtilization
+  unit: PERCENTAGE
+  title: CPU Utilization
+memoryUtilization:
+  goldenMetric: memoryUtilization
+  unit: PERCENTAGE
+  title: Memory Utilization
+connectedClients:
+  goldenMetric: connectedClients
+  unit: COUNT
+  title: Connected Clients
