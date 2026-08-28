@@ -1,0 +1,22 @@
+domain: INFRA
+type: OCIAUTONOMOUSDATABASENEW
+synthesis:
+  name: oci.resourceDisplayName
+  identifier: oci.resourceId
+  encodeIdentifierInGUID: true
+  conditions:
+    - attribute: oci.namespace
+      value: oci_autonomous_database_new
+  tags:
+    oci.regionName:
+    oci.compartmentId:
+    oci.resourceId:
+    oci.namespace:
+    oci.resourceDisplayName:
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true
+goldenTags:
+  - oci.regionName
+  - oci.compartmentId
+  - oci.namespace
