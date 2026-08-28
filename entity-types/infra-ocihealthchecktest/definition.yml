@@ -1,0 +1,37 @@
+domain: INFRA
+type: OCIHEALTHCHECKTEST
+goldenTags:
+- oci.availabilityDomain
+- oci.compartmentId
+- oci.region
+- oci.lifecycleState
+- oci.homeRegion
+- oci.displayName
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true
+synthesis:
+  tags:
+    newrelic.cloudIntegrations.providerAccountName:
+      entityTagNames: [newrelic.cloudIntegrations.providerAccountName, providerAccountName]
+      multiValue: false
+  rules:
+  - ruleName: infra_ocihealthchecktest_composite
+    compositeIdentifier:
+      separator: "/"
+      attributes:
+        - oci.resourceId
+        - oci.namespace
+    name: oci.resourceName
+    legacyFeatures:
+      overrideGuidType: true
+    encodeIdentifierInGUID: true
+    conditions:
+    - attribute: oci.resourceId
+      prefix: "ocid1.healthchecktest"
+    - attribute: oci.namespace
+      value: "oci_healthchecks_test"
+
+ownership:
+  primaryOwner:
+    teamName: "Cloud Monitoring Platform"
