@@ -1,0 +1,18 @@
+cpuUtilization:
+  title: CPU Utilization
+  unit: PERCENTAGE
+  queries:
+    oci:
+      select: average(oci.container.instance.test.cpu.utilization)
+      from: Metric
+      eventId: entity.guid
+      eventName: entity.name
+memoryUtilization:
+  title: Memory Utilization
+  unit: PERCENTAGE
+  queries:
+    oci:
+      select: average(oci.container.instance.test.memory.utilization)
+      from: Metric
+      eventId: entity.guid
+      eventName: entity.name
